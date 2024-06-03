@@ -1,0 +1,429 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: cruiser;
+    src: url(/fonts/2015\ Cruiser\ Bold_1.ttf);
+}
+
+header{
+    display: flex;
+    background: white;
+    align-items: center;
+    border-bottom: blue solid 3px;
+    padding: 3px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    justify-content: space-around;
+}
+
+#logo{
+    font-family: cruiser;
+}
+
+.list-group{
+    background-color: white;
+    font-size: 0.8em;
+    font-family: arial;
+    font-weight: bold;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.list-group-item {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+a:hover{
+    color: blue;
+}
+.list-group-item:hover{
+    color: blue;
+}
+
+#hamburger{
+    width: 30px;
+    filter: invert(100%);
+}
+
+
+
+@media (max-width: 760px) {
+    .list-group{
+        transition: 1s;
+        border-right: solid blue 3px;
+        display: grid;
+        position: absolute;
+        left: -500px;
+        top: 50px;
+        height: 60vh;
+        text-align: left;
+        grid-template-rows: 50px 50px 50px 50px;
+    }
+}
+
+.hide{
+    left: 10px;
+}
+
+.subs{
+    margin-left: -15px;
+    margin-right: 10px;
+    margin-top: 19.8px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: solid blue 2px;
+    border-left: solid blue 2px;
+    border-right: solid blue 2px;
+    position: absolute;
+    list-style: none;
+    display: none;
+}
+
+@media (max-width:760px) {
+    .subs{
+        margin-left: 115px;
+        margin-top: -22px;
+    
+    border-top: solid blue 2px;
+
+    }
+}
+
+
+.shown {
+    display: block;
+
+}
+
+
+
+/* .list-group-item:hover .list-group-item::after{
+    width: 100%;
+} */
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contained{
+    width :95%;
+    background-color: rgb(231, 229, 229);
+    height:fit-content;
+}
+
+#slideshow{
+    margin: 70px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slides{
+    width: 100%;
+    height: 400px;
+    /* transition: 1s; */
+}
+
+@media (max-width: 760px) {
+    .slides{
+        height: 300px;
+    }
+}
+
+.s1{
+    background-image: url('/pictures/abstract-technology-design-wallpaper-preview.jpg');
+background-size: 100%;    
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.s2{
+    background-image: url('/pictures/programmer-wallpaper-preview.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.s3{
+    background-image: url('/pictures/programming-programming-language-syntax-highlighting-code-wallpaper-preview.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.about{
+    /* margin: 20px; */
+    width: 100%;
+    padding: 15px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    font-size: 1em;
+}
+.about span{
+    font-family: cruiser;
+}
+.about section{
+    width: 85%;
+}
+
+.about h2{
+    margin: 10px 0px 10px 0px;
+    width: fit-content;
+    position: relative;
+}
+
+.about h2::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    animation-name: slip;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    transition: 0.5s;
+}
+@keyframes slip {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.about-list{
+    list-style: circle;
+}
+
+.about-list-item{
+    margin: 15px 0px 15px 10px;
+}
+
+.about button{
+    display: block;
+    padding: 5px;
+    width: 100px;
+    margin-top: 10px;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#how-to-use{
+    margin: 30px 0px 0px 0px ;
+    background: white;
+    padding: 30px;
+    font-family: arial;
+    font-weight: bold;
+    
+}
+
+
+#how{
+    list-style: circle;
+}
+#how h4{
+    color: blue;
+}
+
+.how-item{
+    margin: 15px;
+}
+
+
+
+
+    .iconic {
+            width: 20px;
+            margin: 10px;
+        }
+    
+        .cat {
+            margin: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .cat h2{
+            font-size: 0.9em;
+            font-weight: bold;
+            font-family: arial;
+        }
+
+
+
+        .bio{
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bion{
+            width: 90%;
+            font-family: arial;
+            
+        }
+.ebenimg {
+    margin-top: 65px;
+    width: 100%;
+    height: 300px;
+    background-image: url('/pictures/IMG-20240401-WA0005.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: cruiser;
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+}
+
+.contact{
+    display: grid;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.conc{
+    text-align: center;
+    margin: 10px;
+}
+
+#startrecording {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 3px blue;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    height: 150px;
+    border-radius: 50%;
+    margin: 70px 20px 20px 20px;
+}
+
+#startrec {
+    width: 80%;
+
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#textdiv {
+    margin: 20px;
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+    border: blue solid 3px;
+    border-radius: 5px;
+}
+
+
+#lang{
+    width: 75%;
+    margin: 20px;
+    padding: 10px;
+    border: blue solid 3px;
+    border-radius: 5px;
+}
+
+.form{
+    background-color: white;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-form{
+    width: 80%;
+    /* background-color: blue; */
+    padding: 20px;
+}
+
+#lan{
+    width: 70%;
+    margin: 15px;
+    padding: 5px;
+    border: blue solid 3px;
+    border-radius: 5px;
+}
+
+#textd{
+    display: block;
+    margin:15px 15px 15px 15%;
+    padding: 5px;
+    border: blue solid 3px;
+    border-radius: 5px;
+    width: 68%;
+}
+
+#speak{
+    display: block;
+    width: 20%;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    margin: 10px 10px 10px 40%;
+}
+
+.containe{
+    width: 95%;
+        background-color: white;
+        height: fit-content;
+}

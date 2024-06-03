@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <div class="container">
+      <div class="containe">
+        <div class="form">
+          <form id="main-form">
+            <textarea
+              type="text"
+              name="textd"
+              id="textd"
+              placeholder=" Input your text"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <select name="lan" id="lan">
+              <option>Change Language</option>
+            </select>
+
+            <input type="submit" value="Speak" id="speak" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/javascript/text.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <div class="contain">
+      <button id="startrecording">
+        <img id="startrec" src="/icons/record.png" alt="" />
+      </button>
+      <select name="lang" id="lang">
+        <option value="US-en">Change Language</option>
+      </select>
+      <textarea
+        name="textdiv"
+        id="textdiv"
+        cols="30"
+        rows="15"
+        placeholder="Speech in text output"
+      ></textarea>
+    </div>
+
+    <script src="/DROIDWEB/javascript/droid.js"></script>
+  </body>
+</html>

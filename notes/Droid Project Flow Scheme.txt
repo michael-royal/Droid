@@ -1,0 +1,6 @@
+Droid Project Flow Scheme
+
+1. logo design
+2. UI design 
+3. home page structure 
+4. working with apis 

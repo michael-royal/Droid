@@ -1,0 +1,25 @@
+step 1: list out variables
+step 2: initialize the voices array 
+step 3: create a function to get the voice list
+note: the voice list will not show unless a function called "onvoicechanged" is ran and equated to the function to fetch the voices
+
+step 4: create options for the voices change select menu
+step5: set two attributes for the options(data_lang and data_name
+
+step6: make the function to activate the speech
+step7: check if it is speaking using :synth.speaking:
+step8: check if the textinput is empty  
+step9: if the former is false then we create a new speechsythesisutterance () object to access the properties assigned to it specifically onend and onerror 
+step10: selecting the voices from the list of voices to use for the speech  using the attribute and the index{0} 
+
+step11:loop through the array of voices and check if the voice.name matches the selected voice if it does then equate the object you created.voice to the voice 
+
+step12: submit the form and invoke the speak() function 
+
+
+
+
+
+
+
+
